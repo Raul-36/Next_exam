@@ -1,10 +1,5 @@
 import Link from "next/link";
-import { RxRocket } from "react-icons/rx";
-import classes from "./category-page.module.css";
-import minion from "@/assets/minion/minik.png";
-import Image from "next/image";
 import ProductsContainer from "@/components/shared/products-container";
-import { ProductCard } from "@/components/shared/product-card";
 import { CategoryProps } from "@/components/helpers/interfaces/category";
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
