@@ -51,7 +51,7 @@ export default async function ProductCategory({ params }: ProdProps) {
               <p className="text-base text-muted-foreground">
                 ${product?.price || "Price not found"}
               </p>
-              <a className="line-clamp-1 inline-block text-base text-muted-foreground hover:underline" href="/">skateshop</a>
+              <Link className="line-clamp-1 inline-block text-base text-muted-foreground hover:underline" href="/">skateshop</Link>
             </div>
 
             <div className="shrink-0 bg-border h-px w-full my-1.5" role="none"></div>
