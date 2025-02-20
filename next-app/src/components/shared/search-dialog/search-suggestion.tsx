@@ -3,7 +3,6 @@ import {
     CommandGroup,
     CommandItem,
     CommandSeparator,
-    CommandShortcut,
   } from "@/components/ui/command";
 
 import { navbar } from "@/data/navbar";
@@ -13,15 +12,15 @@ interface SearchCategoryProps {
 }
 
 export default function SearchSuggestion({ onSelect }: SearchCategoryProps) {
-    let categories: CategoryProps[];
+    const categories: CategoryProps[];
     categories = [];
 
     
     
     while (categories.length < 3)
     {
-        var index = Math.floor(Math.random()*(navbar.length))
-        var category = navbar[index].items[Math.floor(Math.random()*navbar[index].items.length)];
+        let index = Math.floor(Math.random()*(navbar.length))
+        let category = navbar[index].items[Math.floor(Math.random()*navbar[index].items.length)];
         if (category.title != "All" && !categories.find((item) => item.id == category.id))
         {
             categories.push(category);
