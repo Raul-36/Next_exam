@@ -25,14 +25,6 @@ export default function CardAction({ product }: { product: ItemProps | ProductPr
     });
   };
 
-  const removeProducts = (
-    event: React.MouseEvent<HTMLButtonElement>,
-    id: number
-    ) => {
-    event.preventDefault();
-    setProducts((prev) => prev.filter((prod) => prod.id !== id));
-  };
-
   return (
     <div className="flex max-w-[260px] gap-4 flex-col">
       <QuantitySelector product={product}/>
