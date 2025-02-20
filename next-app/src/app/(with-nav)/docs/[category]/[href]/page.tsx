@@ -1,5 +1,3 @@
-import { NavBarProps } from "@/components/helpers/interfaces/nav-bar";
-import { ItemProps } from "@/components/helpers/interfaces/items";
 import { ProductCard } from "@/components/shared/product-card";
 import Link from "next/link";
 import { ProductProps } from "@/components/helpers/interfaces/product";
